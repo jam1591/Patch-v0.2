@@ -1,0 +1,19 @@
+{
+  "heal": {
+    "value": 30,
+    "cooldown": 30000,
+    "cooldownRemaining": 30000
+  },
+  "run": {
+    "value": 1.4,
+    "duration": 1000,
+    "durationRemaining": 1000,
+    "cooldown": 4000,
+    "cooldownRemaining": 4000
+  },
+  "teleport": {
+    "range": 100,
+    "cooldown": 1000,
+    "cooldownRemaining": 1000
+  }
+}

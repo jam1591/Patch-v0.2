@@ -1,0 +1,134 @@
+{
+    "rifle": {
+        "category": {
+            "name": "Rifle",
+            "type": "Firearm"
+        },
+        "magazine": {
+            "name": "Basic",
+            "category": {
+                "name": "Rifle",
+                "type": "Firearm"
+            },
+            "remaining": 18,
+            "reload": {
+                "time": 2500,
+                "type": "Standard"
+            }
+        },
+        "matrix": {
+            "name": "Basic",
+            "category": {
+                "name": "Rifle",
+                "type": "Firearm"
+            },
+            "baseDamageMultiplier": 1,
+            "bullet": {
+                "speed": 10,
+                "damage": 1,
+                "size": 5,
+                "color": "rgba(0,0,0,0.5)",
+                "penetration": true
+            }
+        }
+    },
+    "sniper": {
+        "category": {
+            "name": "Sniper Rifle",
+            "type": "Firearm"
+        },
+        "magazine": {
+            "name": "Basic",
+            "category": {
+                "name": "Sniper Rifle",
+                "type": "Firearm"
+            },
+            "remaining": 1,
+            "reload": {
+                "time": 4000,
+                "type": "Charge"
+            }
+        },
+        "matrix": {
+            "name": "Basic",
+            "category": {
+                "name": "Sniper Rifle",
+                "type": "Firearm"
+            },
+            "baseDamageMultiplier": 2,
+            "bullet": {
+                "speed": 8,
+                "damage": 3,
+                "size": 20,
+                "color": "rgba(0,0,0,0.5)",
+                "penetration": true
+            }
+        }
+    },
+    "pistol": {
+        "category": {
+            "name": "Pistol",
+            "type": "Firearm"
+        },
+        "magazine": {
+            "name": "Basic",
+            "category": {
+                "name": "Pistol",
+                "type": "Firearm"
+            },
+            "remaining": 10,
+            "reload": {
+                "time": 1500,
+                "type": "Standard"
+            }
+        },
+        "matrix": {
+            "name": "Basic",
+            "category": {
+                "name": "Pistol",
+                "type": "Firearm"
+            },
+            "baseDamageMultiplier": 5,
+            "bullet": {
+                "speed": 8,
+                "damage": 1,
+                "size": 8,
+                "color": "rgba(0,0,0,0.5)",
+                "penetration": false
+            }
+        }
+    },
+    "flamethrower": {
+        "category": {
+            "name": "Flamethrower",
+            "type": "Incendiary"
+        },
+        "magazine": {
+            "name": "Basic",
+            "category": {
+                "name": "Flamethrower",
+                "type": "Incendiary"
+            },
+            "remaining": 1200,
+            "reload": {
+                "time": 3000,
+                "type": "Charge"
+            }
+        },
+        "matrix": {
+            "name": "Basic",
+            "category": {
+                "name": "Flamethrower",
+                "type": "Incendiary"
+            },
+            "thermalDamage": 1,
+            "radius": 80,
+            "angle_in_degrees": 45, 
+            "fuel": {
+                "flammability": 0.1,
+                "consumption": 10,
+                "color": "rgba(0,0,0,0.2)"
+            }
+        }
+    }
+}

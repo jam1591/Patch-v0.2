@@ -1,0 +1,19 @@
+{
+  "hp": 100,
+  "height": 44,
+  "width": 38,
+  "speed": 1.5,
+  "inventory": {
+    "gold": 0
+  },
+  "animation" : {
+    "left": "asset/img/player/left.png",
+    "right": "asset/img/player/right.png",
+    "up": "asset/img/player/up.png",
+    "down": "asset/img/player/down.png",
+    "leftDown": "asset/img/player/down_left.png",
+    "leftUp": "asset/img/player/up_left.png",
+    "rightUp": "asset/img/player/up_right.png",
+    "rightdown": "asset/img/player/down_right.png"
+  }
+}

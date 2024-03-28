@@ -1,0 +1,18 @@
+{
+    "portal": {
+        "x": 100,
+        "y": 100,
+        "width": 94,
+        "height": 72,
+        "color": "black",
+        "img": "asset/img/portal.png"
+    },
+    "shop": {
+        "x": 350,
+        "y": 300,
+        "width": 95,
+        "height": 123,
+        "color": "blue",
+        "img": "asset/img/house.png"
+    }
+}

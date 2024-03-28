@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./asset/css/styles.css">
+</head>
+
+<body>
+    <div id="hero_banner">
+        <h1>WELCOME TO PATCH</h1>
+        <p>This preview offers a glimpse of the game, showcasing its gameplay, features, and challenges.</p>
+        <p>You must guide Patch through a terrain teeming with relentless monsters. Each encounter demands quick thinking, precise aim, and strategic planning as you battle to outlast the ever-encroaching threats. Whether you prefer the precision of long-range firearms or a fiery intensity of an incindiary weapons, your choices will shape your adventure as you fight for survival.</p>
+        <div>
+            <a href="#the_game"> <button >START GAME</button> </a>
+            <a href="#instuctions"> <button>INSTRUCTIONS</button> </a>
+        </div>
+    </div>
+
+    <div id="the_game">
+        <div id="game_container"></div>
+        <canvas id=myCanvas></canvas>
+    </div>
+
+    <div id="instuctions">
+        <p><strong>ATTACK: </strong>LEFT-MOUSE-CLICK</p>
+        <p><strong>CHANGE WEAPON: </strong> RIGHT-MOUSE-CLICK</p>
+        <p><strong>MOVE: </strong>WASD</p>
+        <p><strong>SKILL: </strong>TELEPORT (SPACE), HEAL (F), RUN (E)</p>
+        <p><strong>INTERACT WITH NPC: </strong>R</p>
+    </div>
+
+    <div id="footnote">
+        <p>Made by @Vaidotas 2024/03/21</p>
+    </div>
+
+    <button id="back_to_top">&#129093;</button>
+
+    <script>
+        let mybutton = document.getElementById("back_to_top");
+
+        window.onscroll = () => {
+            if(window.scrollY > 20) {
+                mybutton.style.display = "block"
+            } else {
+                mybutton.style.display = "none"
+            }
+        }
+
+        mybutton.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+            });
+        });
+    </script>
+
+    <script src="asset/js/components/monster/monster.js"></script>
+    <script src="asset/js/components/monster/monsterManager.js"></script>
+    <script src="asset/js/components/weapon/common/magazine.js"></script>
+    <script src="asset/js/components/weapon/firearm/bullet.js"></script>
+    <script src="asset/js/components/weapon/firearm/firearmMatrix.js"></script>
+    <script src="asset/js/components/weapon/firearm/pistol.js"></script>
+    <script src="asset/js/components/weapon/firearm/rifle.js"></script>
+    <script src="asset/js/components/weapon/firearm/sniper.js"></script>
+    <script src="asset/js/components/weapon/incindiary/fuel.js"></script>
+    <script src="asset/js/components/weapon/incindiary/incindiaryMatrix.js"></script>
+    <script src="asset/js/components/weapon/incindiary/flamethrower.js"></script>
+    <script src="asset/js/components/player/player.js"></script>
+    <script src="asset/js/components/player/skills.js"></script>
+    <script src="asset/js/components/player/patch.js"></script>
+    <script src="asset/js/components/player/inventory.js"></script>
+    <script src="asset/js/components/camera/camera.js"></script>
+    <script src="asset/js/components/interface/interface.js"></script>
+    <script src="asset/js/components/npc/npc.js"></script>
+    <script src="asset/js/components/npc/portal.js"></script>
+    <script src="asset/js/components/npc/shop.js"></script>
+    <script src="asset/js/helper/utils.js"></script>
+    <script src="asset/js/scenes/scene.js"></script>
+    <script src="asset/js/scenes/arena.js"></script>
+    <script src="asset/js/scenes/town.js"></script>
+    <script src="asset/js/scenes/sceneManager.js"></script>
+    <script src="asset/js/scenes/eventManager.js"></script>
+    <script src="index.js"></script>
+    
+</body>
+
+</html>

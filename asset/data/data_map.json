@@ -1,0 +1,26 @@
+{
+    "arena": {
+        "name": "Arena",
+        "size": {
+            "width": 800,
+            "height": 800
+        },
+        "img": "asset/img/arena.png",
+        "buffer" : {
+            "top": 64,
+            "sides": 16
+        }
+    },
+    "town": {
+        "name": "Town",
+        "size": {
+            "width": 500,
+            "height": 500
+        },
+        "img": "asset/img/town.png",
+        "buffer" : {
+            "top": 64,
+            "sides": 16
+        }
+    }
+}

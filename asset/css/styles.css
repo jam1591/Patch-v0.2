@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Dosis", sans-serif;
+    background-color: #1b1b1b;
+    color: white;
+    margin: 0;    
+}
+
+#hero_banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    height: 100vh;
+    padding: 0 300px;
+    flex-direction: column;
+}
+
+    #hero_banner p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #hero_banner a button {
+        font-size: 16px;
+        text-align: center;
+        margin: 30px 0;
+        padding: 20px;
+        border: 1px solid white;
+        border-radius: 5px;
+    }
+
+    #hero_banner a button:hover {
+        color: white;
+        background-color: #1b1b1b;
+    }
+
+#the_game {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    }
+
+    #start_game{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+
+    #start_game button{
+        font-size: 16px;
+        padding: 20px;
+        width: 150px;
+    }
+
+    #start_game button:hover {
+        border: 1px solid white;
+        border-radius: 5px;
+        color: white;
+        background-color: #1b1b1b;
+    }
+
+    #the_game canvas {
+        background-color: #131212;
+        cursor: crosshair;
+        z-index: 0;
+    }
+
+
+#instuctions {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+}
+#instuctions p {
+    font-size: 40px;
+}
+
+#footnote{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 50px;
+    background-color: #1b1b1b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    #footnote p {
+        font-size: 16px;
+        color: white;
+    }
+
+#back_to_top {
+    position: fixed;
+    bottom: 20px;
+    border: 0;
+    right: 20px;
+    font-size: 80px;
+    color: white;
+    display: none;
+    background-color: transparent;
+}
+
+    #back_to_top:hover {
+        color: #8f7f7f;
+    }
+
+#shop_container {
+    width: 700px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    opacity: 0.95;
+    user-select: none;
+}
+
+    .grid_container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    .shop_container_header {
+        position: relative;
+        margin: -10px;
+        background-color: #1b1b1b;
+        color: #ffffff;
+        text-align: center;
+        /* border-top-left-radius: 5px;
+        border-top-right-radius: 5px; */
+    }
+
+    .shop_container_header h2{
+        height: 60px;
+        margin-top: 0;
+        line-height: 2.5em;
+        font-weight: normal;
+    }
+
+    .side_nav {
+        grid-column: span 4;
+        padding: 10px;
+        margin: 10px;
+        background-color: #acaa9b;
+        /* border-radius: 5px; */
+    }
+
+    .dropdown {
+        margin-bottom: 10px;
+    }
+
+    .dropdown-toggle {
+        cursor: pointer;
+        color: black;
+        padding: 10px;
+        border: 1px solid #1b1b1b;
+    }
+
+    .dropdown-content {
+        display: none;
+        color: black;
+    }
+
+    .dropdown-content p:hover {
+        background-color:  #ccc;
+    }
+
+    .dropdown-content p {
+        margin: 0;
+        cursor: pointer;
+        left: 20px;
+        padding: 10px;
+    }
+
+    .dropdown-content p.selected {
+        background-color: #1b1b1b;
+        color: #ccc;
+    }
+
+    .upgrades {
+        grid-column: span 8;
+        margin: 10px;
+        padding: 10px;
+        background-color: #acaa9b;
+        color: #131212;
+        /* border-radius: 5px; */
+        text-align: center;
+    }
+
+    #close_btn {
+        cursor: pointer;
+        margin: 10px;
+        background-color: #cf3737;
+        /* border-top-right-radius: 5px; */
+        color: #ccc;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        height: 30px;
+        width: 50px;
+        border: none;
+    }
+
+    .upgrades h3 {
+        height: 40px;
+        margin: 0;
+        line-height: 1.5em;
+        font-weight: normal;
+    }
+
+    #upgrades_magazine,
+    #upgrades_matrix {
+        width: calc(49% - 5px); 
+        box-sizing: border-box;
+    }
+
+    #upgrades_magazine {
+        float: left;
+    }
+
+    #upgrades_matrix {
+        float: right;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .cards .color {
+        margin: 0;
+        background-color: #1b1b1b;
+    }
+
+    .cards .card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        height: 100px;
+        width: auto;
+        /* border-radius: 10px; */
+        color: #ccc;
+        cursor: pointer;
+        transition: 400ms;
+    }
+
+    .cards .card p.tip {
+        font-size: 1em;
+        font-weight: 700;
+        margin: 0;
+    }
+    
+    .cards .card p.second-text {
+        font-size: .7em;
+        margin: 0;
+    }
+    
+    .upgrades .cards .card:hover {
+        transform: scale(1.05, 1.05);
+    }
+    
+    .upgrades .cards:hover > .card:not(:hover) {
+        transform: scale(0.80, 0.80);
+    }
